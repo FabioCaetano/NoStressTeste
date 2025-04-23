@@ -25,11 +25,11 @@ function Input({ className = "", ...props }) {
   );
 }
 
-// App content continued (truncated for brevity in this snippet)
 export default function NoStressEnglishClub() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50 text-gray-800 relative">
-      {/* Full content already in the canvas */}
+      <h1 className="text-center text-3xl font-bold p-10">No Stress English Club</h1>
+      <p className="text-center text-lg px-4">Seu conteúdo está sendo carregado com sucesso!</p>
     </div>
   );
 }
