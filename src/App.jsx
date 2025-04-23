@@ -179,7 +179,7 @@ export default function NoStressEnglishClub() {
       </section>
 
       <a
-        href="https://wa.me/SEUNUMEROAQUI"
+        href="https://wa.me/5519988018278"
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 animate-bounce"
         target="_blank"
         rel="noopener noreferrer"
