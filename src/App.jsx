@@ -33,8 +33,9 @@ export default function NoStressEnglishClub() {
           alt="Logo No Stress English Club"
           className="mx-auto w-full max-w-[48rem] mb-2"
         />
-        
-        <Button className="mt-2 px-6 py-3 text-lg text-blue-700 border border-blue-700 hover:bg-blue-100 bg-gradient-to-br from-white via-blue-50 to-white">Quero minha primeira aula gratuita!</Button>
+        <Button className="mt-2 px-6 py-3 text-lg text-blue-700 border border-blue-700 hover:bg-blue-100 bg-gradient-to-br from-white via-blue-50 to-white">
+          Quero minha primeira aula gratuita!
+        </Button>
       </header>
 
       <section className="relative">
@@ -54,14 +55,10 @@ export default function NoStressEnglishClub() {
       </section>
 
       <section className="py-16 px-4 max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-6 text-center">
-              <BookOpen className="mx-auto mb-4 w-10 h-10 text-blue-600 transition-transform duration-300 hover:scale-110" />
+              <BookOpen className="mx-auto mb-6 w-16 h-16 text-blue-600 transition-transform duration-300 hover:scale-110" />
               <h2 className="text-2xl font-semibold">Aulas Dinâmicas</h2>
               <p className="text-gray-600 mt-2">
                 Métodos interativos, conversação prática e conteúdo atual.
@@ -72,7 +69,7 @@ export default function NoStressEnglishClub() {
 
         <Card className="shadow-lg">
           <CardContent className="p-6 text-center">
-            <Mail className="mx-auto mb-4 w-10 h-10 text-blue-600 transition-transform duration-300 hover:scale-110" />
+            <Mail className="mx-auto mb-6 w-16 h-16 text-blue-600 transition-transform duration-300 hover:scale-110" />
             <h2 className="text-2xl font-semibold">Para jovens e adultos</h2>
             <p className="text-gray-600 mt-2">
               Desde o básico até o avançado, com foco em resultados práticos e rápidos.
@@ -82,7 +79,7 @@ export default function NoStressEnglishClub() {
 
         <Card className="shadow-lg">
           <CardContent className="p-6 text-center">
-            <Phone className="mx-auto mb-4 w-10 h-10 text-blue-600" />
+            <Phone className="mx-auto mb-6 w-16 h-16 text-blue-600" />
             <h2 className="text-2xl font-semibold">Contato Fácil</h2>
             <p className="text-gray-600 mt-2">
               Tire suas dúvidas e agende sua aula pelo WhatsApp ou e-mail.
@@ -159,13 +156,15 @@ export default function NoStressEnglishClub() {
         <form className="max-w-2xl mx-auto space-y-4">
           <Input placeholder="Seu nome" />
           <Input placeholder="Seu e-mail" type="email" />
+          <Input placeholder="Seu WhatsApp" />
           <Input placeholder="Sua mensagem" className="h-24" />
           <Button className="w-full" onClick={() => {
             const button = document.querySelector('button');
             const nome = document.querySelector('input[placeholder="Seu nome"]').value;
             const email = document.querySelector('input[placeholder="Seu e-mail"]').value;
+            const tel = document.querySelector('input[placeholder="Seu WhatsApp"]').value;
             const mensagem = document.querySelector('input[placeholder="Sua mensagem"]').value;
-            const texto = encodeURIComponent(`Olá!\n\nNome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`);
+            const texto = encodeURIComponent(`Olá!\n\nNome: ${nome}\nEmail: ${email}\nWhatsApp: ${tel}\nMensagem: ${mensagem}`);
             button.innerText = 'Enviando...';
             window.open(`mailto:fabiocaetanoif10@gmail.com?subject=Contato%20via%20site&body=${texto}`, '_blank');
             setTimeout(() => { button.innerText = 'Enviar mensagem'; }, 2000);
