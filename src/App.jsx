@@ -51,7 +51,7 @@ export default function NoStressEnglishClub() {
           loop
           muted
           playsInline
-          src="https://videos.pexels.com/video-files/3184290/3184290-hd_1280_720_25fps.mp4"
+          src="https://i.imgur.com/etoXRKT.mp4"
         />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
           <h2 className="text-white text-3xl md:text-5xl font-bold text-center px-4">
