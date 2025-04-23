@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Mail, Phone, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Card({ children, className = "" }) {
   return <div className={`bg-white rounded shadow p-4 ${className}`}>{children}</div>;
@@ -25,9 +27,13 @@ function Input({ className = "", ...props }) {
 }
 
 export default function NoStressEnglishClub() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50 text-gray-800 relative">
-      <header className="text-center py-20 px-4 bg-blue-100">
+      <header className="text-center py-20 px-4 bg-blue-100" data-aos="fade-down">
         <img
           src="https://i.imgur.com/PvMWjbC.png"
           alt="Logo No Stress English Club"
@@ -38,7 +44,7 @@ export default function NoStressEnglishClub() {
         </Button>
       </header>
 
-      <section className="relative">
+      <section className="relative" data-aos="fade-up">
         <video
           className="w-full h-[60vh] object-cover"
           autoPlay
@@ -54,7 +60,7 @@ export default function NoStressEnglishClub() {
         </div>
       </section>
 
-      <section className="py-16 px-4 max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
+      <section className="py-16 px-4 max-w-6xl mx-auto grid gap-8 md:grid-cols-3" data-aos="zoom-in-up">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-6 text-center">
@@ -67,7 +73,7 @@ export default function NoStressEnglishClub() {
           </Card>
         </motion.div>
 
-        <Card className="shadow-lg">
+        <Card className="shadow-lg" data-aos="zoom-in">
           <CardContent className="p-6 text-center">
             <Mail className="mx-auto mb-6 w-16 h-16 text-blue-600 transition-transform duration-300 hover:scale-110" />
             <h2 className="text-2xl font-semibold">Para jovens e adultos</h2>
@@ -77,7 +83,7 @@ export default function NoStressEnglishClub() {
           </CardContent>
         </Card>
 
-        <Card className="shadow-lg">
+        <Card className="shadow-lg" data-aos="zoom-in">
           <CardContent className="p-6 text-center">
             <Phone className="mx-auto mb-6 w-16 h-16 text-blue-600" />
             <h2 className="text-2xl font-semibold">Contato Fácil</h2>
@@ -88,7 +94,7 @@ export default function NoStressEnglishClub() {
         </Card>
       </section>
 
-      <section className="bg-blue-50 py-16 px-4">
+      <section className="bg-blue-50 py-16 px-4" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
           O que dizem nossos alunos
         </h2>
@@ -104,7 +110,7 @@ export default function NoStressEnglishClub() {
         </div>
       </section>
 
-      <section className="py-16 px-4 max-w-5xl mx-auto">
+      <section className="py-16 px-4 max-w-5xl mx-auto" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
           Veja como é aprender com a gente
         </h2>
@@ -122,7 +128,7 @@ export default function NoStressEnglishClub() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-blue-50">
+      <section className="py-16 px-4 bg-blue-50" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
           Nossa galeria de alunos
         </h2>
@@ -134,7 +140,7 @@ export default function NoStressEnglishClub() {
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <section className="py-16 px-4" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
           Agende sua aula
         </h2>
@@ -149,7 +155,7 @@ export default function NoStressEnglishClub() {
         </div>
       </section>
 
-      <section className="bg-white py-20 px-4">
+      <section className="bg-white py-20 px-4" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
           Fale com a gente
         </h2>
@@ -179,7 +185,7 @@ export default function NoStressEnglishClub() {
       </section>
 
       <a
-        href="https://wa.me/5519988018278"
+        href="https://wa.me/SEUNUMEROAQUI"
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 animate-bounce"
         target="_blank"
         rel="noopener noreferrer"
@@ -201,7 +207,7 @@ export default function NoStressEnglishClub() {
         </svg>
       </a>
 
-      <footer className="text-center text-sm text-gray-500 py-10 bg-blue-100">
+      <footer className="text-center text-sm text-gray-500 py-10 bg-blue-100" data-aos="fade-up">
         © {new Date().getFullYear()} No Stress English Club. Todos os direitos reservados.
       </footer>
     </div>
