@@ -40,10 +40,10 @@ export default function NoStressEnglishClub() {
           className="mx-auto w-full max-w-[48rem] mb-2"
         />
         <a href="#agendamento">
-  <Button className="mt-2 px-6 py-3 text-lg text-blue-700 border border-blue-700 hover:bg-blue-100 bg-gradient-to-br from-white via-blue-50 to-white">
-    Quero minha primeira aula gratuita!
-  </Button>
-</a>
+          <Button className="mt-2 px-6 py-3 text-lg text-blue-700 border border-blue-700 hover:bg-blue-100 bg-gradient-to-br from-white via-blue-50 to-white">
+            Quero minha primeira aula gratuita!
+          </Button>
+        </a>
       </header>
 
       <section className="relative" data-aos="fade-up">
@@ -117,16 +117,20 @@ export default function NoStressEnglishClub() {
           Veja como é aprender com a gente
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <img
-            src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Aula de inglês"
-            className="rounded-xl shadow-md w-full h-64 object-cover"
-          />
-          <img
-            src="https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Estudando inglês"
-            className="rounded-xl shadow-md w-full h-64 object-cover"
-          />
+          <iframe
+            className="w-full h-64 rounded-xl shadow-md"
+            src="https://www.youtube.com/embed/ysz5S6PUM-U"
+            title="Exemplo de aula 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          <iframe
+            className="w-full h-64 rounded-xl shadow-md"
+            src="https://www.youtube.com/embed/Bey4XXJAqS8"
+            title="Exemplo de aula 2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </section>
 
@@ -181,10 +185,10 @@ export default function NoStressEnglishClub() {
 
         <div className="text-center mt-10">
           <a href="#agendamento">
-  <Button className="px-6 py-3 text-blue-700 border border-blue-700 hover:bg-blue-100 bg-white">
-    Quero minha primeira aula gratuita!
-  </Button>
-</a>
+            <Button className="px-6 py-3 text-blue-700 border border-blue-700 hover:bg-blue-100 bg-white">
+              Quero minha primeira aula gratuita!
+            </Button>
+          </a>
         </div>
       </section>
 
