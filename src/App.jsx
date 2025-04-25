@@ -35,7 +35,7 @@ export default function NoStressEnglishClub() {
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50 text-gray-800 relative">
       <header className="text-center py-20 px-4 bg-blue-100" data-aos="fade-down">
         <img
-          src="https://imgur.com/G9H4oeN.png"
+          src="https://imgur.com/UUQaXU9.png"
           alt="Logo No Stress English Club"
           className="mx-auto w-full max-w-[48rem] mb-2"
         />
@@ -185,7 +185,7 @@ export default function NoStressEnglishClub() {
       </section>
 
       <a
-        href="https://wa.me/SEUNUMEROAQUI"
+        href="https://wa.me/5519988018278"
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 animate-bounce"
         target="_blank"
         rel="noopener noreferrer"
