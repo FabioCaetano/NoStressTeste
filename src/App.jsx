@@ -135,16 +135,16 @@ export default function NoStressEnglishClub() {
       </section>
 
       <section className="py-16 px-4 bg-blue-50" data-aos="fade-up">
-        <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
-          Nossa galeria de alunos
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-          <img className="rounded-lg shadow-md" src="https://images.pexels.com/photos/1308663/pexels-photo-1308663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aluno feliz 1" />
-          <img className="rounded-lg shadow-md" src="https://images.pexels.com/photos/4144221/pexels-photo-4144221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aluno feliz 2" />
-          <img className="rounded-lg shadow-md" src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aluno feliz 3" />
-          <img className="rounded-lg shadow-md" src="https://images.pexels.com/photos/1181304/pexels-photo-1181304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aluno feliz 4" />
-        </div>
-      </section>
+  <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
+    Galeria de Fotos
+  </h2>
+  <div className="overflow-x-auto whitespace-nowrap space-x-4 px-4 max-w-6xl mx-auto">
+    <img className="inline-block rounded-lg shadow-md w-64 h-40 object-cover" src="https://images.pexels.com/photos/1308663/pexels-photo-1308663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aluno feliz 1" />
+    <img className="inline-block rounded-lg shadow-md w-64 h-40 object-cover" src="https://images.pexels.com/photos/4144221/pexels-photo-4144221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aluno feliz 2" />
+    <img className="inline-block rounded-lg shadow-md w-64 h-40 object-cover" src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aluno feliz 3" />
+    <img className="inline-block rounded-lg shadow-md w-64 h-40 object-cover" src="https://images.pexels.com/photos/1181304/pexels-photo-1181304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aluno feliz 4" />
+  </div>
+</section>
 
       <section id="agendamento" className="py-16 px-4" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
