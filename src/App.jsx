@@ -35,7 +35,7 @@ export default function NoStressEnglishClub() {
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50 text-gray-800 relative">
       <header className="text-center py-20 px-4 bg-blue-100" data-aos="fade-down">
         <img
-          src="https://i.imgur.com/PvMWjbC.png"
+          src="https://imgur.com/G9H4oeN.png"
           alt="Logo No Stress English Club"
           className="mx-auto w-full max-w-[48rem] mb-2"
         />
