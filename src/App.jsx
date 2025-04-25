@@ -33,15 +33,17 @@ export default function NoStressEnglishClub() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50 text-gray-800 relative">
-      <header className="text-center py-20 px-4 bg-blue-100" data-aos="fade-down">
+      <header className="text-center py-12 px-4 bg-blue-100" data-aos="fade-down">
         <img
           src="https://imgur.com/UUQaXU9.png"
           alt="Logo No Stress English Club"
           className="mx-auto w-full max-w-[48rem] mb-2"
         />
-        <Button className="mt-2 px-6 py-3 text-lg text-blue-700 border border-blue-700 hover:bg-blue-100 bg-gradient-to-br from-white via-blue-50 to-white">
-          Quero minha primeira aula gratuita!
-        </Button>
+        <a href="#agendamento">
+  <Button className="mt-2 px-6 py-3 text-lg text-blue-700 border border-blue-700 hover:bg-blue-100 bg-gradient-to-br from-white via-blue-50 to-white">
+    Quero minha primeira aula gratuita!
+  </Button>
+</a>
       </header>
 
       <section className="relative" data-aos="fade-up">
@@ -51,7 +53,7 @@ export default function NoStressEnglishClub() {
           loop
           muted
           playsInline
-          src="https://i.imgur.com/etoXRKT.mp4"
+          src="https://videos.pexels.com/video-files/3184290/3184290-hd_1280_720_25fps.mp4"
         />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
           <h2 className="text-white text-3xl md:text-5xl font-bold text-center px-4">
@@ -60,7 +62,7 @@ export default function NoStressEnglishClub() {
         </div>
       </section>
 
-      <section className="py-16 px-4 max-w-6xl mx-auto grid gap-8 md:grid-cols-3" data-aos="zoom-in-up">
+      <section className="py-10 px-4 max-w-6xl mx-auto grid gap-4 md:grid-cols-3" data-aos="zoom-in-up">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-6 text-center">
@@ -95,7 +97,7 @@ export default function NoStressEnglishClub() {
       </section>
 
       <section className="bg-blue-50 py-16 px-4" data-aos="fade-up">
-        <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
+        <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">
           O que dizem nossos alunos
         </h2>
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -140,7 +142,7 @@ export default function NoStressEnglishClub() {
         </div>
       </section>
 
-      <section className="py-16 px-4" data-aos="fade-up">
+      <section id="agendamento" className="py-16 px-4" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
           Agende sua aula
         </h2>
@@ -178,14 +180,16 @@ export default function NoStressEnglishClub() {
         </form>
 
         <div className="text-center mt-10">
-          <Button className="px-6 py-3 text-blue-700 border border-blue-700 hover:bg-blue-100 bg-white">
-            Quero minha primeira aula gratuita!
-          </Button>
+          <a href="#agendamento">
+  <Button className="px-6 py-3 text-blue-700 border border-blue-700 hover:bg-blue-100 bg-white">
+    Quero minha primeira aula gratuita!
+  </Button>
+</a>
         </div>
       </section>
 
       <a
-        href="https://wa.me/5519988018278"
+        href="https://wa.me/5519988018278?text=Ol%C3%A1%2C+quero+minha+primeira+aula+gratuita!"
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 animate-bounce"
         target="_blank"
         rel="noopener noreferrer"
