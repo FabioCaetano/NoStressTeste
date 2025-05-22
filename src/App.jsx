@@ -126,7 +126,7 @@ export default function NoStressEnglishClub() {
     ></iframe>
     <iframe
       className="inline-block rounded-xl shadow-md w-80 h-48"
-      src="https://youtube.com/shorts/gTGxXQaG9tE?si=yG4Hw20oaMi8cGAX"
+      src="https://www.youtube.com/embed/gTGxXQaG9tE?si=yG4Hw20oaMi8cGAX"
       title="Exemplo de aula"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
