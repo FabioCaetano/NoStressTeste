@@ -119,7 +119,7 @@ export default function NoStressEnglishClub() {
   <div className="overflow-x-auto whitespace-nowrap space-x-4 px-4">
     <iframe
       className="inline-block rounded-xl shadow-md w-80 h-48"
-      src="https://youtu.be/7_QWhuIrdMo?si=dR9pHqwzefOwFZDM"
+      src="https://www.youtube.com/embed/7_QWhuIrdMo?si=dR9pHqwzefOwFZDM"
       title="Eu sabia mas esqueci!"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
