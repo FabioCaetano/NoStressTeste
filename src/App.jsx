@@ -113,25 +113,25 @@ export default function NoStressEnglishClub() {
       </section>
 
       <section className="py-16 px-4 max-w-5xl mx-auto" data-aos="fade-up">
-        <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
-          Veja como é aprender com a gente
-        </h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <iframe
-            className="w-full h-64 rounded-xl shadow-md"
-            src="https://www.youtube.com/embed/ysz5S6PUM-U"
-            title="Exemplo de aula 1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-          <iframe
-            className="w-full h-64 rounded-xl shadow-md"
-            src="https://www.youtube.com/embed/Bey4XXJAqS8"
-            title="Exemplo de aula 2"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+  <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
+    Veja como é aprender com a gente
+  </h2>
+  <div className="overflow-x-auto whitespace-nowrap space-x-4 px-4">
+    <iframe
+      className="inline-block rounded-xl shadow-md w-80 h-48"
+      src="https://youtu.be/7_QWhuIrdMo?si=dR9pHqwzefOwFZDM"
+      title="Eu sabia mas esqueci!"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+    <iframe
+      className="inline-block rounded-xl shadow-md w-80 h-48"
+      src="https://youtube.com/shorts/gTGxXQaG9tE?si=yG4Hw20oaMi8cGAX"
+      title="Exemplo de aula"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
       </section>
 
       <section className="py-16 px-4 bg-blue-50" data-aos="fade-up">
@@ -146,13 +146,37 @@ export default function NoStressEnglishClub() {
   </div>
 </section>
 
-      <section id="agendamento" className="py-16 px-4" data-aos="fade-up">
+      <section className="py-16 px-4 max-w-5xl mx-auto" data-aos="fade-up">
+  <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">Missão, Visão e Valores</h2>
+  <div className="grid gap-6 md:grid-cols-3">
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h3 className="text-xl font-semibold text-blue-700 mb-2">Missão</h3>
+      <p className="text-gray-700">Ensinar inglês de maneira leve, objetiva e transformadora, garantindo que os alunos tenham resultados reais e atinjam seus objetivos profissionais, pessoais ou de viagem — sem depender de anos de mensalidades sem progresso.</p>
+    </div>
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h3 className="text-xl font-semibold text-blue-700 mb-2">Visão</h3>
+      <p className="text-gray-700">Impactar positivamente a vida das pessoas por meio do ensino de inglês acessível, humano e de alta qualidade, promovendo oportunidades reais de crescimento e mudança de vida.</p>
+    </div>
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h3 className="text-xl font-semibold text-blue-700 mb-2">Valores</h3>
+      <ul className="list-disc list-inside text-gray-700">
+        <li>Respeito e empatia no processo de aprendizado</li>
+        <li>Compromisso com resultados verdadeiros</li>
+        <li>Acessibilidade e inclusão</li>
+        <li>Transformação pessoal e profissional</li>
+        <li>Dedicação ao ensino voluntário e social</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="agendamento" className="py-16 px-4" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
           Agende sua aula
         </h2>
         <div className="flex justify-center">
           <iframe
-            src="https://calendly.com/fabiocaetanoif10/aula-de-ingles-gratuita?hide_event_type_details=1&hide_gdpr_banner=1"
+            src="https://calendly.com/emersonvidoli/30min?preview_source=et_card&month=2025-05"
             width="100%"
             height="630"
             frameBorder="0"
@@ -178,7 +202,7 @@ export default function NoStressEnglishClub() {
             const mensagem = document.querySelector('input[placeholder="Sua mensagem"]').value;
             const texto = encodeURIComponent(`Olá!\n\nNome: ${nome}\nEmail: ${email}\nWhatsApp: ${tel}\nMensagem: ${mensagem}`);
             button.innerText = 'Enviando...';
-            window.open(`mailto:fabiocaetanoif10@gmail.com?subject=Contato%20via%20site&body=${texto}`, '_blank');
+            window.open(`mailto:Emersonvidoli@gmail.com?subject=Contato%20via%20site&body=${texto}`, '_blank');
             setTimeout(() => { button.innerText = 'Enviar mensagem'; }, 2000);
           }}>Enviar mensagem</Button>
         </form>
@@ -193,7 +217,7 @@ export default function NoStressEnglishClub() {
       </section>
 
       <a
-        href="https://wa.me/5519988018278?text=Ol%C3%A1%2C+quero+minha+primeira+aula+gratuita!"
+        href="https://wa.me/14372985755?text=Ol%C3%A1%2C+quero+minha+primeira+aula+gratuita!"
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 animate-bounce"
         target="_blank"
         rel="noopener noreferrer"
