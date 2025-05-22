@@ -176,7 +176,7 @@ export default function NoStressEnglishClub() {
         </h2>
         <div className="flex justify-center">
           <iframe
-            src="https://calendly.com/emersonvidoli/30min?preview_source=et_card&month=2025-05"
+            src="https://calendly.com/emersonvidoli/aula_de_ingles_gratuita"
             width="100%"
             height="630"
             frameBorder="0"
